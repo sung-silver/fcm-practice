@@ -1,4 +1,4 @@
-package com.practice.fcm.external.config;
+package com.practice.fcm.external.fcm;
 
 import com.google.auth.oauth2.*;
 import com.google.firebase.*;
