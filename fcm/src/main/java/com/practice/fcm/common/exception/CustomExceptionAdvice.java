@@ -15,6 +15,6 @@ public class CustomExceptionAdvice {
     @ExceptionHandler(CustomException.class)
     protected ResponseEntity<CustomException> handleCustomException(CustomException e) {
         log.error("Custom Exception occured: {}", e.getMessage(), e);
-        return ResponseEntity.status(e.getHttpStatus()).body(e);
+        return ResponseEntity.status(e.getHttpStatus()).body(null);
     }
 }
