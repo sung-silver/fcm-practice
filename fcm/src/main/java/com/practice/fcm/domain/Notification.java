@@ -20,4 +20,10 @@ public class Notification extends BaseTimeEntity {
     */
     private String message; // 알림 전송에 사용된 내용
     private Boolean isRead = false; // 알림 확인 여부
+
+    @Builder
+    private Notification (Member member, String message) {
+        this.member = member;
+        this.message = message;
+    }
 }
